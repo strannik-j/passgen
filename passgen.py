@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-#  Без имени.py
+#  passgen.py
 #  
 #  Copyright 2012 Strannik-j <mail@strannik-j.org>
 #  
