@@ -1,4 +1,4 @@
-#!/usr/bin/env pypy
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 #  passgen.py
