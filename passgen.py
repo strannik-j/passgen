@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env pypy
 # -*- coding: utf-8 -*-
 #
 #  passgen.py
@@ -92,11 +92,82 @@ def gen(event):
 		M.extend(px)
 	lenM = len(M)
 	
-	while ch0 < ch1:
-		rand0 = randrange(0, lenM, 1)
-		pass0 += str(M[rand0])
 	
-		ch0 += 1
+	while ch0 <= ch1:
+		if ch0 == ch1:
+
+			if var0.get() == 1:
+				ch2 = 0
+				while ch2 < ch1:			
+					if pass0[ch2] in pa:
+						print("pa - совпадение")	 
+						ch2 += ch1*2
+						
+					else:
+						print("Буква не подходит")
+						ch2 += 1
+						if ch2 >= ch1:
+							print("Слово не подходит")
+							pass0 = ""
+							ch0 = 0
+
+
+			if var1.get() == 1 and ch0 != 0:
+				ch2 = 0
+				while ch2 < ch1:			
+					if pass0[ch2] in pA:
+						print("pA - совпадение")	 
+						ch2 += ch1*2
+						
+					else:
+						print("Буква не подходит")
+						ch2 += 1
+						if ch2 >= ch1:
+							print("Слово не подходит")
+							pass0 = ""
+							ch0 = 0
+
+
+			if var2.get() == 1 and ch0 != 0:
+				ch2 = 0
+				while ch2 < ch1:			
+					if pass0[ch2] in p0:
+						print("p0 - совпадение")	 
+						ch2 += ch1*2
+						
+					else:
+						print("Буква не подходит")
+						ch2 += 1
+						if ch2 >= ch1:
+							print("Слово не подходит")
+							pass0 = ""
+							ch0 = 0
+
+
+			if var3.get() == 1 and ch0 != 0:
+				ch2 = 0
+				while ch2 < ch1:			
+					if pass0[ch2] in px:
+						print("pxS - совпадение")	 
+						ch2 += ch1*2
+						
+					else:
+						print("Буква не подходит")
+						ch2 += 1
+						if ch2 >= ch1:
+							print("Слово не подходит")
+							pass0 = ""
+							ch0 = 0
+
+
+			
+			if ch0 != 0:
+				ch0 = ch1+1
+		if ch0 < ch1:
+			rand0 = randrange(0, lenM, 1)
+			pass0 += str(M[rand0])
+			ch0 += 1
+	
 	ent_text1.set(pass0)
 	M = []
 	return 0
