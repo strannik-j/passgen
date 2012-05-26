@@ -96,7 +96,7 @@ def gen(event):
 	while ch0 <= ch1:
 		if ch0 == ch1:
 
-			if var0.get() == 1:
+			if var0.get() == 1 and ch1 > 1:
 				ch2 = 0
 				while ch2 < ch1:			
 					if pass0[ch2] in pa:
@@ -112,7 +112,7 @@ def gen(event):
 							ch0 = 0
 
 
-			if var1.get() == 1 and ch0 != 0:
+			if var1.get() == 1 and ch0 != 0 and ch1 > 2:
 				ch2 = 0
 				while ch2 < ch1:			
 					if pass0[ch2] in pA:
@@ -128,7 +128,7 @@ def gen(event):
 							ch0 = 0
 
 
-			if var2.get() == 1 and ch0 != 0:
+			if var2.get() == 1 and ch0 != 0 and ch1 > 3:
 				ch2 = 0
 				while ch2 < ch1:			
 					if pass0[ch2] in p0:
@@ -144,7 +144,7 @@ def gen(event):
 							ch0 = 0
 
 
-			if var3.get() == 1 and ch0 != 0:
+			if var3.get() == 1 and ch0 != 0 and ch1 > 4:
 				ch2 = 0
 				while ch2 < ch1:			
 					if pass0[ch2] in px:
