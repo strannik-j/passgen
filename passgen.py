@@ -37,7 +37,6 @@
 #  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import sys
-from tkinter import *
 from random import randrange
 
 
